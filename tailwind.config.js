@@ -36,4 +36,9 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'bg-primary', 'text-primary-foreground', 'hover:bg-primary/90',
+    'bg-secondary', 'text-secondary-foreground', 'hover:bg-secondary/80',
+    'hover:bg-accent', 'hover:text-accent-foreground'
+  ]
 }; 
