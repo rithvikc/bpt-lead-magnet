@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/rithvikchand/software-projects/bpt-fulfillment/src/app/layout\":[\"static/media/2abeb75a5e332dc3.p.woff2\"]},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"

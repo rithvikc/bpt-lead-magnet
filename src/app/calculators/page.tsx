@@ -51,6 +51,18 @@ export default function CalculatorsPage() {
             </div>
           </div>
           
+          <div className="card p-6 hover:shadow-md transition-shadow bg-accent border-2 border-primary">
+            <h3 className="text-xl font-serif mb-3">Free Shipping Calculator</h3>
+            <p className="text-foreground/70 mb-4 h-16">
+              Calculate the optimal free shipping threshold for your ecommerce business.
+            </p>
+            <div className="mt-4">
+              <Link href="/calculators/free-shipping" className="btn btn-primary px-4 py-2 w-full block text-center">
+                Calculate Free Shipping Threshold
+              </Link>
+            </div>
+          </div>
+          
           <div className="card p-6 hover:shadow-md transition-shadow">
             <h3 className="text-xl font-serif mb-3">Prep Calculator</h3>
             <p className="text-foreground/70 mb-4 h-16">
