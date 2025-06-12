@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #0066cc;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f7ff;
+  --secondary-foreground: #0a4f8d;
+  --accent: #cce4ff;
+  --accent-foreground: #0a4f8d;
+  --muted: #f5f7fa;
+  --muted-foreground: #737373;
+  --border: #d0e1f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a1629;
+    --foreground: #f5f5f5;
+    --primary: #2186eb;
+    --primary-foreground: #ffffff;
+    --secondary: #16294e;
+    --secondary-foreground: #f5f5f5;
+    --accent: #104e8b;
+    --accent-foreground: #c7d9ff;
+    --muted: #1a2c4c;
+    --muted-foreground: #a3a3a3;
+    --border: #2c4b78;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Instrument Serif', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors 
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary
+           disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+  
+  .btn-outline {
+    @apply border border-border hover:bg-accent hover:text-accent-foreground;
+  }
+  
+  .card {
+    @apply rounded-lg border bg-background text-foreground shadow-sm;
+  }
+}
